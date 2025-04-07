@@ -1,0 +1,32 @@
+.alvo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+}
+
+.circulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.grande {
+  width: 180px;
+  height: 180px;
+}
+
+.medio {
+  width: 120px;
+  height: 120px;
+}
+
+.pequeno {
+  width: 60px;
+  height: 60px;
+}
