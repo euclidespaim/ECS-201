@@ -1,0 +1,54 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 5px;
+  padding: 5px;
+  min-height: 95vh;
+}
+
+header {
+  background: #1e1e2f;
+  color: #fff;
+  grid-column: 1 / 3; /* Ocupa duas colunas */
+  grid-row: 1; /* Primeira linha */
+  text-align: center;
+  padding: 10px;
+}
+
+aside {
+  background: #2c2c3c;
+  grid-column: 1; /* Primeira coluna */
+  grid-row: 2; /* Segunda linha */
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 25px;
+}
+
+a:hover {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+main {
+  background: #2c2c3c;
+  color: #fff;
+  grid-column: 2; /* Segunda coluna */
+  grid-row: 2; /* Segunda linha */
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  background: #1a1a26;
+  color: #fff;
+  grid-column: 1 / 3; /* Ocupa duas colunas */
+  grid-row: 3; /* Terceira linha */
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 10px;
+}
