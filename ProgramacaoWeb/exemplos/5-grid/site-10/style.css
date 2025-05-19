@@ -1,16 +1,85 @@
-/* O código da animação */
-@keyframes exemplo {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* /* O elemento em que a animação será apliacada */
-div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation-name: exemplo;
-  animation-duration: 4s;
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #0f0f2b;
+}
+
+.container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Blocos principais */
+.box {
+  border-radius: 5px;
+}
+
+.orange-top {
+  background-color: #ffa726;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.red {
+  background-color: #f44336;
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+}
+
+.green-top {
+  background-color: #4dd0e1;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.green-mid {
+  background-color: #26c6da;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* Container aninhado no canto inferior direito */
+.nested-container {
+  background-color: #c71616;
+  border-radius: 5px;
+  padding: 10px;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Blocos internos do container aninhado */
+.green-bottom-left {
+  background-color: #26a69a;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.green-bottom-right {
+  background-color: #26c6da;
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+}
+
+.orange-small {
+  background-color: #ffa726;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }

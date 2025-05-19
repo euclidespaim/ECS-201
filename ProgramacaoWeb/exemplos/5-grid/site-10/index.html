@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout com Grid Aninhado</title>
   <link rel="stylesheet" href="style.css">
-  <title>Animações CSS</title>
 </head>
 <body>
-  <header>
-    <h2>Animações CSS</h2>
-  </header>
+  <div class="container">
+    <div class="box orange-top"></div>
+    <div class="box red"></div>
+    <div class="box green-top"></div>
+    <div class="box green-mid"></div>
 
-  <div></div>
+    <!-- Container interno -->
+    <div class="nested-container">
+      <div class="box green-bottom-left"></div>
+      <div class="box green-bottom-right"></div>
+      <div class="box orange-small"></div>
+    </div>
+  </div>
 </body>
 </html>

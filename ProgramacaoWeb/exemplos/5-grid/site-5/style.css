@@ -1,10 +1,36 @@
-div {
-  width: 100px;
-  height: 100px;
-  background: red;
-  transition: width 3s;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-div:hover {
-  width: 400px;
+html, body {
+  width: 100%;
+  height: 100%;
 }
+
+body {
+  background-color: #0f0f2b;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  flex: 0 0 33.3333%;
+  height: 50%;
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
+
+.red      { background-color: #f44336; }
+.orange1  { background-color: #fb8c00; }
+.orange2  { background-color: #ffa726; }
+.green1   { background-color: #26a69a; }
+.green2   { background-color: #26c6da; }
+.green3   { background-color: #4dd0e1; }
