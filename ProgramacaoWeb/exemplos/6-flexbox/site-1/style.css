@@ -1,0 +1,15 @@
+.bolinhas {
+  display: flex;
+  height: 250px;
+  background-color: DodgerBlue;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.bolinhas  div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
