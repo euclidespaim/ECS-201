@@ -6,4 +6,4 @@ def tabuda(num):
   for i in range(1, 11):
     print(i, "x", num, "=", i * num)
     
-tabuda(2)
+tabuda(3)

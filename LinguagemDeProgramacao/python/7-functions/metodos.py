@@ -6,3 +6,6 @@ def verifica_par(n):
         print(f"{n} é par.")
     else:
         print(f"{n} é ímpar.")
+        
+def subtrai(a, b):
+    return a - b        
