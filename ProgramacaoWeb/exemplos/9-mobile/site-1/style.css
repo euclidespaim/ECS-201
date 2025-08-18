@@ -1,0 +1,78 @@
+/* Configuração base para manter o footer no fim da tela */
+html, body {
+  height: 100%; /* ocupar 100% da altura */
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* empilhar header, nav, main e footer */
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  color: #333;
+}
+
+/* Faz o main crescer para "empurrar" o footer */
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Cabeçalho */
+header {
+  background: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Menu de navegação */
+nav {
+  display: flex;
+  flex-direction: column; /* Coluna no celular */
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #ddd;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5rem;
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+  color: #0066cc;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #0066cc;
+  color: white;
+}
+
+/* Rodapé */
+footer {
+  background: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Ajuste para telas maiores (a partir de 768px) */
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row; /* Em linha no desktop */
+    justify-content: center;
+  }
+
+  nav a {
+    flex: 1;
+    max-width: 150px;
+  }
+
+  main {
+    max-width: 800px;
+    margin: auto;
+  }
+}

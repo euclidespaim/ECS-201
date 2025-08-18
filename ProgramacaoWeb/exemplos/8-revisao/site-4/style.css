@@ -1,0 +1,65 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f4f4f4; }
+
+/* Grid Pai */
+.grid-container {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  min-height: 100vh;
+}
+
+.header, .footer {
+  grid-column: 1 / 4;
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav {
+  background: #0055aa;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.main {
+  background: white;
+  padding: 10px;
+}
+
+.aside {
+  background: #ddd;
+  padding: 10px;
+}
+
+/* Grid Filho */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cards-grid div {
+  background: #eaeaea;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .header, .footer { grid-column: 1; }
+}
