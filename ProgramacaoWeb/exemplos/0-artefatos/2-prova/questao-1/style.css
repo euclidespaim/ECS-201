@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#texto {
+  display: none;
+  /* começa escondido */
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

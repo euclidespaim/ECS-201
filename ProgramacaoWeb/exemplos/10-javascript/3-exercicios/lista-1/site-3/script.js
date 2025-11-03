@@ -7,7 +7,7 @@ btn = document.getElementById('btn')
 
 btn.addEventListener('click', function() {
     var input = document.getElementById('num').value;
-    var resultado = input ** 3;
+    var resultado = input ** 2;
 
     document.getElementById('resultado').innerHTML = "O quadrado de " + input + " é " + resultado;
 });

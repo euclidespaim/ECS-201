@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+  font-size: 14px;
+} 
+
+ul {
+  padding: 0;
+  width: 200px;
+}
+
+li {
+  font-size: 18px;
+  list-style: none;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: aliceblue;  
+}
+

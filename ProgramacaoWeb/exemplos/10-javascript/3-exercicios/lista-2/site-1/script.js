@@ -1,7 +1,7 @@
 var count = 0;
 
 document.getElementById('aumentar').addEventListener('click', function() {
-  count++;
+  count = count + 1;
   document.getElementById('contador').innerText = count;
 });
 
